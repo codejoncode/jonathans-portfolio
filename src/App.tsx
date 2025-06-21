@@ -7,10 +7,12 @@ import HomePage from './Pages/HomePage';
 import AboutPage from './Pages/AboutPage';
 import ProjectsPage from './Pages/ProjectsPage';
 import LecturesPage from './Pages/LecturesPage';
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <BrowserRouter>
+    <div className="main-content" style={{minHeight: '100vh'}}>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -18,6 +20,8 @@ function App() {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/lectures" element={<LecturesPage />} />
       </Routes>
+      <Footer />
+    </div>
     </BrowserRouter>
   );
 }
