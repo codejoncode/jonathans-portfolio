@@ -29,6 +29,31 @@ const AboutPage = () => {
         <h2 className="text-center mb-5">My Journey</h2>
 
         <div className="timeline position-relative">
+
+        {/* Started Coding */}
+          <div className="timeline-item mb-5">
+            <div className="d-flex">
+              <div className="timeline-icon bg-primary text-white me-4 p-3 rounded-circle">
+                💡
+              </div>
+              <div>
+                <h5>Discovered Code</h5>
+                <p className="mb-1 text-muted">September 2014</p>
+                <img
+                  src="/codecademy_begining.jpg"
+                  alt="Early Resume"
+                  className="img-fluid rounded"
+                  style={{ maxWidth: "400px" }}
+                />
+                <p>
+                  Taught myself Python and JavaScript using Codecademy, while
+                  juggling jobs to support my family. I would work 40 hours a week plus an 
+                  additional 20 hours learning various languages. 
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Pre-Coding Resume */}
           <div className="timeline-item mb-5">
             <div className="d-flex">
@@ -39,7 +64,13 @@ const AboutPage = () => {
                 <h5>Before Tech – Resume Snapshot</h5>
                 <p className="mb-1 text-muted">Up to Sept 2014</p>
                 <img
-                  src="/before-resume.png"
+                  src="/Before Professional Coding Experience.jpg"
+                  alt="Early Resume"
+                  className="img-fluid rounded"
+                  style={{ maxWidth: "400px" }}
+                />
+                <img
+                  src="/Before Professional Coding Experience2.jpg"
                   alt="Early Resume"
                   className="img-fluid rounded"
                   style={{ maxWidth: "400px" }}
@@ -51,24 +82,6 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
-
-          {/* Started Coding */}
-          <div className="timeline-item mb-5">
-            <div className="d-flex">
-              <div className="timeline-icon bg-primary text-white me-4 p-3 rounded-circle">
-                💡
-              </div>
-              <div>
-                <h5>Discovered Code</h5>
-                <p className="mb-1 text-muted">September 2014</p>
-                <p>
-                  Taught myself Python and JavaScript using Codecademy, while
-                  juggling jobs to support my family.
-                </p>
-              </div>
-            </div>
-          </div>
-
           {/* Bloom Institute */}
           <div className="timeline-item mb-5">
             <div className="d-flex">
@@ -77,10 +90,17 @@ const AboutPage = () => {
               </div>
               <div>
                 <h5>Graduated Bloom Institute of Technology</h5>
-                <p className="mb-1 text-muted">Year you graduated</p>
+                <p className="mb-1 text-muted">2019</p>
+                <img
+                  src="/After Lambda School.jpg"
+                  alt="Current Resume"
+                  className="img-fluid rounded"
+                  style={{ maxWidth: "400px" }}
+                />
                 <p>
-                  Sharpened full-stack engineering skills, built collaborative
-                  projects, and leveled up through immersive training.
+                  All of the projects here except the events app was built while learning at Bloom Institute of Technology.
+                  I would also add during the same time I built a Sudoku app, Calendar app, emulator and C and several other projects
+                  that are not listed on this resume. 
                 </p>
               </div>
             </div>
@@ -96,7 +116,7 @@ const AboutPage = () => {
                 <h5>Today</h5>
                 <p className="mb-1 text-muted">2025</p>
                 <img
-                  src="/current-resume.png"
+                  src="/After Lambda"
                   alt="Current Resume"
                   className="img-fluid rounded"
                   style={{ maxWidth: "400px" }}
