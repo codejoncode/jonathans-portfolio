@@ -14,9 +14,9 @@ function App() {
     <BrowserRouter>
     <div className="main-content" style={{minHeight: '100vh'}}>
       <Navbar />
+      <HomePage />
+      <AboutPage />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/lectures" element={<LecturesPage />} />
       </Routes>
