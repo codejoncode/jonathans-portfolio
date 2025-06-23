@@ -1,14 +1,16 @@
 import axios from "axios";
+import { Lecture } from "../Types/lecture";
+import { Project } from "../Types/project";
 
 const api = axios.create({
   baseURL: "https://jonathan-holloway-be.onrender.com",
 });
 
-export const getProjects = () => api.get("/projects");
-export const getLectures = () => api.get("/lectures");
+export const getProjects = (): Promise<{data: Project[]}> => api.get("/projects");
+export const getLectures = (): Promise<{data: Lecture[]}> => api.get("/lectures");
 
 // In case the backend goes down again
-export const getDefaultProjects = () => {
+export const getDefaultProjects = (): Project[] => {
   return [
     {
       id: 1,
@@ -159,7 +161,7 @@ export const getDefaultProjects = () => {
   ];
 };
 
-export const getDefaultLectures = () => {
+export const getDefaultLectures = (): Lecture[] => {
   return [
     {
       id: 1,

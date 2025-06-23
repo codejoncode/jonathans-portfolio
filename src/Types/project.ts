@@ -1,3 +1,4 @@
+type ProjectStatus = "live" | "archived" | "code-only";
 export interface Project {
   id: number;
   title: string;
@@ -8,5 +9,6 @@ export interface Project {
   gif: string;
   gifplay: string;
   githuburl: string;
+  plan: null;
   deployurl: string;
 }
